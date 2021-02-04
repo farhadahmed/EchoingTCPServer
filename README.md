@@ -1,1 +1,1 @@
-A TCP server built with Java that takes input from a client and returns a response message.
+A multi-threaded TCP server built with Java that takes input from a client and returns a response message. Multi-threading was used to allow multiple clients to send messages and receive responses simultaneously.
