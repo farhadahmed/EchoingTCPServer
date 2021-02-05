@@ -23,9 +23,10 @@ public class Echo extends Thread {
                 String echoString = clientInput.readLine();
                 System.out.println("Received message: " + echoString);
                 if (echoString.toLowerCase().equals("exit")) {
+                    output.println("Goodbye.");
                     break;
                 }
-                output.println(echoString);
+                output.println("I got your message: " + echoString);
             }
         } catch (IOException e) {
             System.out.println("ERROR IOException: " + e.getMessage());

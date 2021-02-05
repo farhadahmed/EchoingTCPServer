@@ -30,6 +30,10 @@ public class Main {
                     System.out.println(response);
                 }
             } while (!outputMessage.equals("exit"));
+
+            // If user enters exit, grab response stream and print.
+            response = serverResponseStream.readLine();
+            System.out.println(response);
         } catch (SocketTimeoutException e) {
             System.out.println("ERROR socket timeout: " + e.getMessage());
         } catch (IOException e) {
